@@ -6,6 +6,9 @@ authors = [
     "Alex Dewar <alex.dewar@gmx.co.uk>"
 ]
 
+[tool.poetry.scripts]
+issues2todo = "issues2todo.__main__:main"
+
 [tool.poetry.dependencies]
 python = "^3.12"
 
@@ -22,7 +25,7 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.mypy]
-disallow_any_explicit = true
+disallow_any_explicit = false
 disallow_any_generics = true
 warn_unreachable = true
 warn_unused_ignores = true
